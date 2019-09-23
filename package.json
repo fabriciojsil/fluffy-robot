@@ -1,0 +1,37 @@
+{
+  "name": "fluffy-robot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "lint": "tsc --noEmit && eslint '**/*.{js,ts}'",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "2.3.0",
+    "@typescript-eslint/parser": "2.3.0",
+    "eslint": "6.4.0",
+    "jest": "^24.9.0",
+    "nodemon": "1.19.2",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabriciojsil/fluffy-robot.git"
+  },
+  "author": "fabriciojsil@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabriciojsil/fluffy-robot/issues"
+  },
+  "homepage": "https://github.com/fabriciojsil/fluffy-robot#readme"
+}
